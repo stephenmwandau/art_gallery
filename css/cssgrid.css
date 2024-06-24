@@ -1,0 +1,65 @@
+/* give the display property grid to the container  */
+/* display : property */
+.grid-container {
+    display: grid;
+    /* 1. define rows using '' */
+    /* 2. Define what grid area you want seen on the row */
+    grid-template-areas: 
+    'navsection navsection navsection navsection navsection navsection'
+    'sidemenua sidemenua bannersection bannersection bannersection sidemenub'
+    'maingallery maingallery maingallery maingallery maingallery maingallery'
+    'footersection footersection footersection footersection footersection footersection'
+    ;
+}
+
+#navsection {
+    grid-area: navsection;
+}
+
+#bannersection {
+    grid-area: bannersection;
+
+}
+
+#maingallery {
+    grid-area: maingallery;
+
+}
+
+#footersection {
+    grid-area: footersection;
+
+}
+
+#sidemenua {
+    grid-area: sidemenua;
+
+}
+
+#sidemenub {
+    grid-area: sidemenub;
+
+}
+
+/* when writing a media query position it at the very bottom of the css file  */
+@media only screen and (max-width: 600px){
+    /* body {
+        background-color: red;
+    } */
+
+    /* display : property */
+.grid-container {
+    display: grid;
+    /* 1. define rows using '' */
+    /* 2. Define what grid area you want seen on the row */
+    grid-template-areas: 
+    'navsection navsection navsection navsection navsection navsection'
+    'sidemenua sidemenua sidemenua sidemenua sidemenua sidemenua'
+    'bannersection bannersection bannersection bannersection bannersection bannersection'
+    'sidemenub sidemenub sidemenub sidemenub sidemenub sidemenub'
+    'maingallery maingallery maingallery maingallery maingallery maingallery'
+    'footersection footersection footersection footersection footersection footersection'
+    ;
+}
+
+}
